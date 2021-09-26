@@ -2,13 +2,19 @@
 #define CONTROLLER_H
 
 #include "snake.h"
+#include "LButton.h"
+
 
 class Controller {
  public:
-  void HandleInput(bool &running, Snake &snake) const;
+  
+
+  int HandleInput(int& cur_state, std::vector<std::shared_ptr<Snake>> snakes_) const;
+  int  HandleMouseInput(int &cur_state, LButton &button) const;
+  int HandleInput(int& cur_state) const;
 
  private:
-  void ChangeDirection(Snake &snake, Snake::Direction input,
+  void ChangeDirection(std::shared_ptr<Snake> snake, Snake::Direction input,
                        Snake::Direction opposite) const;
 };
 

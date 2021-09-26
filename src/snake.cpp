@@ -37,10 +37,13 @@ void Snake::UpdateHead() {
       head_x += speed;
       break;
   }
-
+  
   // Wrap the Snake around to the beginning if going off of the screen.
   head_x = fmod(head_x + grid_width, grid_width);
   head_y = fmod(head_y + grid_height, grid_height);
+  //if (head_x < 0 || head_x > grid_width) alive = false;
+  //if (head_y < 0 || head_y > grid_height) alive = false;
+
 }
 
 void Snake::UpdateBody(SDL_Point &current_head_cell, SDL_Point &prev_head_cell) {
@@ -76,4 +79,9 @@ bool Snake::SnakeCell(int x, int y) {
     }
   }
   return false;
+}
+
+
+int Snake::getId() {
+  return _id;
 }

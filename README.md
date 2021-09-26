@@ -8,6 +8,15 @@ The Capstone Project gives you a chance to integrate what you've learned through
 
 In this project, you can build your own C++ application or extend this Snake game, following the principles you have learned throughout this Nanodegree Program. This project will demonstrate that you can independently create applications using a wide range of C++ features.
 
+####                      Extended Features           #####
+#### 1. Added start screen to present beginning screen #####
+#### 2. Added user mouse-click feature to start the game. If user doesnt click on the "start" button range, game won't start #####
+#### 3. Added another snake in the game, to let 2 users play together and compete. please use "w" as up, "a" as left, "z" as down, "d" as right to control the left snake #####
+#### 4. Added obstacles in the game. If a snake's head hit any of the obstacles, it will be dead #####
+#### 5. Added pause and resume states to the game. If user hit "SPACE" key, game will pause. when in pause state, if user hit "ENTER", game will resume. #####
+#### 6. Added game-over screen to present game end screen when two players both come to dead snake #####
+
+
 ## Dependencies for Running Locally
 * cmake >= 3.7
   * All OSes: [click here for installation instructions](https://cmake.org/install/)
